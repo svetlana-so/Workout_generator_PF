@@ -1,0 +1,159 @@
+{
+    "exercises":[
+    {"exercise_name": "Bench Press",
+    "exercise_type": "Upper Body",
+    "exercise_description": "Lay supine on the bench, knees bent and feet flat on the floor. Grip the bar and un-rack bar. Lower the bar to the chest. Press the bar upward until the arms are fully extended, keep the feet on the floor.",
+    "exercise_video": "https://youtu.be/SCVCLChPQFY?si=KLa-k4tAyVREPPCJ"
+    },
+    {"exercise_name": "Barbell Rows",
+    "exercise_type": "Upper Body",
+    "exercise_description": "Stand with feet shoulder width apart. Bend knees slightly and bend over bar with back straight. Grasp bar with wide overhand grip. Pull bar to upper waist. Return until arms are extended and shoulders are stretched downward.",
+    "exercise_video": "https://www.youtube.com/watch?v=FWJR5Ve8bnQ"
+    },
+    {"exercise_name": "Shoulder Press",
+    "exercise_type": "Upper Body",
+    "exercise_description": "Stand with feet shoulder width apart. Grasp bar with overhand grip. Position bar in front of neck. Press bar upward until arms are extended overhead. Return until bar is at upper chest.",
+    "exercise_video": "https://youtu.be/5yWaNOvgFCM?si=cvk66nPiHqj9V8Rq"
+    },
+    {"exercise_name": "Push Ups",
+    "exercise_type": "Upper Body",
+    "exercise_description": "Lie prone on floor with hands slightly wider than shoulder width. Raise body up off floor by extending arms with body straight. Keeping body straight, lower body to floor by bending arms. Push body up until arms are extended. Repeat.",
+    "exercise_video": "https://youtu.be/0pkjOk0EiAk?si=2Pu4a5g9fyopmwSD"
+    },
+    {"exercise_name": "Pull Ups",
+    "exercise_type": "Upper Body",
+    "exercise_description": "Grasp bar with wide overhand grip. Pull body up until chin is above bar. Lower body until arms and shoulders are fully extended. Repeat.",
+    "exercise_video": "https://youtu.be/xf69XHAs5w8?si=yhmKlydUZ8nnXysl"
+    },
+    {"exercise_name": "Bench Dips",
+    "exercise_type": "Upper Body",
+    "exercise_description": "Sit on edge of bench. Place hands on edge of bench. Position feet away from bench. Straighten arms, slide rear end off of bench, and position heels on floor with legs straight. Bend arms and lower body until arms are bent to 90 degrees. Push body up until arms are extended. Repeat.",
+    "exercise_video": "https://www.youtube.com/watch?v=c3ZGl4pAwZ4"
+    },
+    {"exercise_name": "Bicep Curls",
+    "exercise_type": "Upper Body",
+    "exercise_description": "Stand with feet shoulder width apart. Grasp bar with underhand grip. Position bar at thigh. Bend arm and curl bar upward until forearm is vertical. Lower to original position and repeat. Continue with opposite arm.",
+    "exercise_video": "https://youtu.be/ykJmrZ5v0Oo?si=POp8grwPxle_J3D7"
+    },
+    {"exercise_name": "Landmine Press",
+    "exercise_type": "Upper Body",
+    "exercise_description": "Stand facing the barbell, with your feet shoulder-width apart. Keep a neutral head and neck position. Tighten your core by slightly leaning forward. Then, wrap one hand around the weighted end of the bar and gradually push it upward. Keep your elbow close to your body and your wrist straight. Pause at the top of the movement, then slowly lower the bar back to the starting position. Repeat on the other side.",
+    "exercise_video": "https://youtu.be/qFXojXa-RCU"
+    },
+    {"exercise_name": "Plank Shoulder Taps",
+    "exercise_type": "Upper Body",
+    "exercise_description": "Start in a high plank position with your palms flat on the floor, hands shoulder-width apart, shoulders stacked directly above your wrists, legs extended behind you, and your core and glutes engaged. Keeping your hips as still as possible, lift your right hand and tap your left shoulder. Return your right hand to the floor, then lift your left hand and tap your right shoulder. Return to the starting position. That's one rep.",
+    "exercise_video": "https://www.youtube.com/watch?v=QOCn3_iOAro"
+    },
+    {"exercise_name": "Mountain Climbers",
+    "exercise_type": "Upper Body",
+    "exercise_description": "Start in a high plank position with your palms flat on the floor, hands shoulder-width apart, shoulders stacked directly above your wrists, legs extended behind you, and your core and glutes engaged. Keeping your hips as still as possible, lift your right hand and tap your left shoulder. Return your right hand to the floor, then lift your left hand and tap your right shoulder. Return to the starting position. That's one rep.",
+    "exercise_video": "https://www.youtube.com/watch?v=nmwgirgXLYM"
+    },
+    {"exercise_name": "T-Raises",
+    "exercise_type": "Upper Body",
+    "exercise_description": "Stand with your feet hip-width apart, holding a pair of dumbbells at your sides, palms facing each other. Keeping your arms straight and elbows soft, raise your arms out to the sides until they're in line with your shoulders. Pause, then slowly lower the weights back to the starting position.",
+    "exercise_video": "https://youtu.be/xswyCeDWhcU"
+    },
+    {"exercise_name": "Squats",
+    "exercise_type": "Lower Body",
+    "exercise_description": "Stand with feet shoulder width apart. Grasp bar with overhand grip. Position bar in front of neck. Press bar upward until arms are extended overhead. Return until bar is at upper chest.",
+    "exercise_video": "https://youtu.be/QmZAiBqPvZw?si=FiBcpd_g_21qJPE8"
+    },
+    {"exercise_name": "Bulgarian Split Squats",
+    "exercise_type": "Lower Body",
+    "exercise_description": "Stand with your back to a bench or box that's about knee height. Place the top of your left foot on the bench. Step your right foot forward, keeping your weight in your right heel. Bend both knees to lower into a lunge. Press through your right heel to stand, keeping your left foot on the bench. Repeat on the other side.",
+    "exercise_video": "https://www.youtube.com/watch?v=7Aqeb8UHl4k"
+    },
+    {"exercise_name": "Walking Lunges",
+    "exercise_type": "Lower Body",
+    "exercise_description": "Stand tall with your feet hip distance apart. Take a large step forward with the right foot and lower your body toward the floor.  Both legs should be bent at a 90-degree angle at the bottom of the lunge. Push off left foot (back foot) so the left knee lifts up and you land with left foot in front, same bent knee position. Now push off the right foot, lift the right knee, and land with the right foot in front, same body position.  Continue to “walk” your lunge forward as far as you can go, then turn around and walk back.",
+    "exercise_video": "https://youtu.be/DlhojghkaQ0?si=4bDPRLz5L3SMOmsm"
+    },
+    {"exercise_name": "Hip Thrusters",
+    "exercise_type": "Lower Body",
+    "exercise_description": "Start seated on the floor, knees bent. The upper back should be resting against the edge of the weight bench in the center of the bench. Squeeze the glutes and press the bar straight up until the hips are in line with the shoulders and knees. Slowly lower the bar down until the hips are just a few inches off the floor. Squeeze the glutes and lift again.",
+    "exercise_video": "https://youtu.be/Zp26q4BY5HE"
+    },
+    {"exercise_name": "Goblet Squats",
+    "exercise_type": "Lower Body",
+    "exercise_description": "Stand with your feet hip or shoulder-width apart, toes pointed straight ahead. Tighten your abs and hold the kettlebell at chest height by holding the sides of the handle. Sit your hips back and bend your knees to lower yourself into a squat. Keep the chest up as you squat and squat as low as you can while keeping your back straight (when your back starts to round, that's too low). Drive through the feet as you stand and squeeze your glutes as you return to a tall standing position.",
+    "exercise_video": "https://youtu.be/3gpXflqRiEc"
+    },
+    {"exercise_name": "Deadlifts",
+    "exercise_type": "Lower Body",
+    "exercise_description": "Stand with your mid-foot under the barbell. Bend over and grab the bar with a shoulder-width grip. Bend your knees until your shins touch the bar. Lift your chest up and straighten your lower back. Take a big breath, hold it, and stand up with the weight.",
+    "exercise_video": "https://youtu.be/1ZXobu7JvvE?si=8BzdYT_csvMzuicT"
+    },
+    {"exercise_name": "Glute Bridges",
+    "exercise_type": "Lower Body",
+    "exercise_description": "Lie faceup on the floor with your knees bent and your feet flat on the floor. Raise your hips so your body forms a straight line from your shoulders to your knees. Pause in the up position, then lower your body back to the starting position.",
+    "exercise_video": "https://youtu.be/wPM8icPu6H8?si=-WvdNXqCUoSWTZ_g"
+    },
+    {"exercise_name": "Step Ups",
+    "exercise_type": "Lower Body",
+    "exercise_description": "Choose a height that allows you to perform the step up.If using dumbbells, hold a dumbbell in each hand. Place your left foot on to the box and drive through this foot to push your body up and bring your right foot on to the platform. Return your right leg back to the floor. Swith legs and repeat.",
+    "exercise_video": "https://youtu.be/DxUNi119Qzs"
+    },
+    {"exercise_name": "Good Mornings",
+    "exercise_type": "Lower Body",
+    "exercise_description": "Stand with your feet shoulder-width apart, knees slightly bent, and hands behind your head. Keeping your back straight, bend at your hips and lower your torso until it's almost parallel to the floor. Pause, then raise your torso back to the starting position.",
+    "exercise_video": "https://youtu.be/YA-h3n9L4YU?si=Ynsq8V1m798UiS6I"
+    },
+    {"exercise_name": "Sumo Squats",
+    "exercise_type": "Lower Body",
+    "exercise_description": "Stand with your feet wider than shoulder-width apart, toes pointed out at 45-degree angles. Keeping your chest up and core braced, push your hips back, bend your knees, and lower your body until your thighs are parallel to the floor. Pause, then push yourself back up to the starting position.",
+    "exercise_video": "https://youtu.be/sqDGkIBYPAk"
+    },
+    {"exercise_name": "Wall Walks",
+    "exercise_type": "Full Body",
+    "exercise_description": "Start on the floor. Push-up into the top of your push-up. Move one foot at a time. Walk back down the wall.",
+    "exercise_video": "https://youtu.be/NK_OcHEm8yM?si=8mKIFjdnyk3ZnCpO"
+    },
+    {"exercise_name": "Burpees",
+    "exercise_type": "Full Body",
+    "exercise_description": "Stand tall with feet shoulder width apart. Brace your core and drop into a high plank position by placing your hands on the floor, shoulder distance apart, then kick your feet behind you. Try to keep your back straight and abs engaged. Allow your chest to drop to the floor lightly, keeping elbows tucked to either side of the body. Push yourself up by extending your arms and jump your feet back so that they land just below your hands. Swing your arms up and jump as high as you so your feet leave the ground. Complete the required amount of reps.",
+    "exercise_video": "https://youtu.be/auBLPXO8Fww?si=KQt5Vqb8EO08_GwC"
+    },
+    {"exercise_name": "Clean to Press",
+    "exercise_type": "Full Body",
+    "exercise_description": "1. Start with feet shoulder-width apart and hold the barbell approximately 2 inches away from your shins. Push your hips back and grab the barbell. Keep your core very tight and drive through your heels to pull the bar quickly up to your chest. Keep your spine tall.  As soon as the bar reaches your chest, drive through your heels again and press the directly overhead and straighten your arms and legs. Keep your core very tight. Return to starting position with control.",
+    "exercise_video": "https://youtu.be/MsOSMJ33CNA"
+    },
+    {"exercise_name": "Plank 1 minute",
+    "exercise_type": "Full Body",
+    "exercise_description": "Start in a tabletop position on your hands and knees, then lower down to your forearms with your elbows stacked beneath your shoulders. Step your feet back until your body makes a line from shoulders to heels. Squeeze your core and think about pulling your belly button towards your sternum to engage the abs.",
+    "exercise_video": "https://youtu.be/Og6zTet9Mdg"
+    },
+    {"exercise_name": "Overhead squats",
+    "exercise_type": "Full Body",
+    "exercise_description": "1. Establish a safe starting position. The barbell should be resting on the upper traps. Use a controlled dip & drive to push the bar into an overhead position. Stabilize the barbell (Verbal cue: drive your hands to the ceiling & lock your elbows out). Remain balanced by keeping the bar positioned over the mid-foot the entire squat. Hips & chest rise at the same rate on the ascent.",
+    "exercise_video": "https://youtu.be/pn8mqlG0nkE?si=FqHU3HOJI1kaZ3jt"
+    },
+    {"exercise_name": "Kettlebell Swings",
+    "exercise_type": "Full Body",
+    "exercise_description": "Stand, kettlebell in front. Hinge, grab, straight back. Swing back, hips forward. Repeat for core, glutes.",
+    "exercise_video": "https://youtu.be/mKDIuUbH94Q"
+    },
+    {"exercise_name": "Jumping Jacks",
+    "exercise_type": "Full Body",
+    "exercise_description": "Stand with your feet together and your hands down by your side. In one motion jump your feet out to the side and raise your arms above your head. Immediately reverse that motion by jumping back to the starting position.",
+    "exercise_video": "https://youtu.be/c4DAnQ6DtF8"
+    },
+    {"exercise_name": "The Slam Ball",
+    "exercise_type": "Full Body",
+    "exercise_description": "Stand with your feet shoulder-width apart and hold the slam ball in front of your body. Raise the ball above your head and slam it down on the ground as hard as you can. Catch the ball as it bounces back up and repeat.",
+    "exercise_video": "https://youtu.be/k9W6g9LvXDI?si=t3k0G5QCHi42NLxq"
+    },
+    {"exercise_name": "Jump Rope",
+    "exercise_type": "Full Body",
+    "exercise_description": "Hold handles, rope behind. Swing over, jump over. Land light, keep going.",
+    "exercise_video": "https://youtu.be/u3zgHI8QnqE?si=6TdIg6AdLPCWqoxg"
+    },
+    {"exercise_name": "Renegade Rows", 
+    "exercise_type": "Full Body",
+    "exercise_description": "Grab a pair of light dumbbells. Get into a plank position with a dumbbell in each hand. Brace your body, then raise one of the dumbbells, supporting yourself on the other arm. Row the weight upward until your upper arm is slightly higher than your torso, then slowly lower it back down to the ground. Aim for three sets of eight to 10 reps on each arm.",
+    "exercise_video": "hthttps://youtu.be/LccyTxiUrhg?si=g7XwUg7bQUvgzj5f"
+    }
+    ]
+}
