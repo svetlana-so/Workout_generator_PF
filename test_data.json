@@ -1,0 +1,26 @@
+{
+    "exercises": [
+        {
+            "exercise_name": "Push-up",
+            "exercise_type": "upper body",
+            "exercise_description": "Perform a standard push-up.",
+            "exercise_video": "https://example.com/push-up-video"
+        },
+        {
+            "exercise_name": "Squat",
+            "exercise_type": "lower body",
+            "exercise_description": "Do a bodyweight squat.",
+            "exercise_video": "https://example.com/squat-video"
+        }
+    ],
+    "wods": [
+        {
+            "category": "upper body",
+            "workout": "3 rounds of 10 push-ups and 10 squats."
+        },
+        {
+            "category": "lower body",
+            "workout": "4 rounds of 15 squats and 20 lunges."
+        }
+    ]
+}
