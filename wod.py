@@ -97,7 +97,7 @@ class Workout:
         with open("wods.txt", "r") as f:
             wod_data = f.read().split('|')
             random_wod = random.choice(wod_data)
-            print('\033[34m' + random_wod.upper() + '\033[0m')
+            return random_wod.upper()
             
     '''save workout as image'''
     def save_workout(self,chosen_category, output_image_path='workout.png'):
@@ -133,7 +133,26 @@ class Workout:
             text_position = (text_position[0], text_position[1] + font_size)
         image.save(output_image_path)
     
-       
+    def save_wod(self, output_image_path='wod.png'):
+        image_width, image_hight = 300,300
+        #for better quality of the image 
+        dpi=(300,300)
+        background_color = (64,64,64)
+        image = Image.new('RGB', (image_width, image_hight), background_color)
+        image.info['dpi'] = dpi #set dpi for the image
+        draw= ImageDraw.Draw(image)
+        font= ImageFont.load_default()
+        font_size = 15
+        text_position = (30,30)
+        text_color = (255,255,255)
+        
+        wod_info=  "Your WOD for today is:\n\n"
+        wod_info += self.get_wod(chosen_category="wod")
+        lines = wod_info.strip().split('\n')
+        for line in lines:
+            draw.text(text_position, line, font=font, fill=text_color)
+            text_position = (text_position[0], text_position[1] + font_size)
+        image.save(output_image_path, dpi=dpi)  
         
         
     
