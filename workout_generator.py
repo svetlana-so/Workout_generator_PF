@@ -10,7 +10,7 @@ def main():
     workout = Workout("info.json")
     workout.exercises = workout.load_exercises()
     clear()
-    #main_menu()
+    main_menu()
     while True:
         chosen_category = input("\033[36mWhich type of the workout would you like to get?\033[0m ")
         clear()
