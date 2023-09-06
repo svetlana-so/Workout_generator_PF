@@ -144,7 +144,7 @@ class Workout:
         font= ImageFont.load_default()
         font_size = 15
         text_position = (30,30)
-        text_color = (255,255,255)
+        text_color = (255,255,255) 
         
         wod_info=  "Your WOD for today is:\n\n"
         wod_info += self.get_wod(chosen_category="wod")
