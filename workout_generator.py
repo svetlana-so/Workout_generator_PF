@@ -1,4 +1,4 @@
-from wod import Exercise, Workout
+from wod import Workout
 import time
 import requests
 import random
@@ -10,7 +10,7 @@ def main():
     workout = Workout("info.json")
     workout.exercises = workout.load_exercises()
     clear()
-    main_menu()
+    #main_menu()
     while True:
         chosen_category = input("\033[36mWhich type of the workout would you like to get?\033[0m ")
         clear()
@@ -25,11 +25,11 @@ def main():
                 print("Ok, no problem!")  
             break
         elif chosen_category.lower() == "wod":
-            #print('\033[34m' + random_wod.upper() + '\033[0m')
-            print('\033[34m' + workout.get_wod(chosen_category)+ '\033[0m')
+            wod_description = workout.get_wod(chosen_category)
+            print('\033[34m' + wod_description+ '\033[0m')
             save_wod_answer = input("\nWould you like to save your WOD as an image? (yes/no) ")
             if save_wod_answer.lower() == "yes":
-                workout.save_wod(output_image_path='wod.png')
+                workout.save_wod(wod_description, output_image_path='wod.png')
                 clear()
                 print("🌟Your WOD has been saved as an image!🌟")
             else:

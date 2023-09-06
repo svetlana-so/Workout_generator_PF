@@ -1,6 +1,5 @@
 from PIL import Image, ImageDraw, ImageFont
 import textwrap
-import requests
 import random
 import json
 class Exercise:
@@ -98,7 +97,28 @@ class Workout:
             wod_data = f.read().split('|')
             random_wod = random.choice(wod_data)
             return random_wod.upper()
-            
+        
+    def save_wod(self, wod_description, output_image_path='wod.png'):
+        image_width, image_hight = 300,300
+        #for better quality of the image 
+        dpi=(300,300)
+        background_color = (64,64,64)
+        image = Image.new('RGB', (image_width, image_hight), background_color)
+        image.info['dpi'] = dpi #set dpi for the image
+        draw= ImageDraw.Draw(image)
+        font= ImageFont.load_default()
+        font_size = 15
+        text_position = (30,30)
+        text_color = (255,255,255) 
+        
+        wod_info=  "Your WOD for today is:\n\n"
+        wod_info += wod_description
+        lines = wod_info.strip().split('\n')
+        for line in lines:
+            draw.text(text_position, line, font=font, fill=text_color)
+            text_position = (text_position[0], text_position[1] + font_size)
+        image.save(output_image_path, dpi=dpi)  
+                
     '''save workout as image'''
     def save_workout(self,chosen_category, output_image_path='workout.png'):
         random_workout = self.generate_random_workout(chosen_category)
@@ -115,7 +135,7 @@ class Workout:
         lines = workout_info.strip().split('\n')
         self.draw_text_lines(draw, lines, text_position, font, font_size, text_color)
         self.save_image(image, output_image_path)
-    '''create image'''  
+    '''create an image'''  
     def create_image(self, width, hight, background_color):
         return Image.new('RGB', (width, hight), background_color)
     '''create workout information'''   
@@ -146,27 +166,7 @@ class Workout:
         image.save(output_image_path)        
         
     
-    def save_wod(self, output_image_path='wod.png'):
-        image_width, image_hight = 300,300
-        #for better quality of the image 
-        dpi=(300,300)
-        background_color = (64,64,64)
-        image = Image.new('RGB', (image_width, image_hight), background_color)
-        image.info['dpi'] = dpi #set dpi for the image
-        draw= ImageDraw.Draw(image)
-        font= ImageFont.load_default()
-        font_size = 15
-        text_position = (30,30)
-        text_color = (255,255,255) 
-        
-        wod_info=  "Your WOD for today is:\n\n"
-        wod_info += self.get_wod(chosen_category="wod")
-        lines = wod_info.strip().split('\n')
-        for line in lines:
-            draw.text(text_position, line, font=font, fill=text_color)
-            text_position = (text_position[0], text_position[1] + font_size)
-        image.save(output_image_path, dpi=dpi)  
-        
+    
         
     
         
