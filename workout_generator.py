@@ -10,7 +10,7 @@ def main():
     workout = Workout("info.json")
     workout.exercises = workout.load_exercises()
     clear()
-    main_menu()
+    #main_menu()
     while True:
         chosen_category = input("\033[36mWhich type of the workout would you like to get?\033[0m ")
         clear()
@@ -42,6 +42,7 @@ def main():
     user_answer = input("\nWhen you are done with your workout provide some stretching exercises. Would you like to get the example of the streching exercises? (yes/no) ")
     clear()
     if user_answer.lower() == "yes":
+        print("Your strtching exercises for today: \n")
         get_streching_exercises()
         print("\n\033[33mHave a nice day and enjoy our workout!\033[0m\n")
     else:
@@ -64,6 +65,7 @@ def get_streching_exercises():
         for i, index in enumerate(random_exercise,start=1):
             print(f"{i}. {exercises_description[index]}")    
     else:
+        print("Oops, It seems we'are experiencing some technical difficultis right now. Please try again later.")
         print("Error:", response.status_code, response.text)   
         
 '''Function that displays main menu'''       

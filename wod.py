@@ -49,6 +49,8 @@ class Workout:
         self.categories = categories
         self.file_name = file_name
         self.exercises = []
+        #Initialize random workout
+        self.random_workout = None
         
     '''Load exercises from json file'''
     
@@ -67,11 +69,15 @@ class Workout:
         chosen_exercises = [exercise for exercise in self.exercises if exercise.category.lower() == choicen_category.lower()]
         random.shuffle(chosen_exercises)
         selected_exercises = chosen_exercises[:num_exercises]
-        return selected_exercises
+        self.random_workout = selected_exercises
+        return self.random_workout
     
-    '''Display workout with description and video link'''
+    
     def display_workout(self,chosen_category,num_rounds = 3, break_time = 2):
-        random_workout = self.generate_random_workout(chosen_category)
+        '''Display workout with description and video link'''
+        if self.random_workout is None:
+            self.generate_random_workout(chosen_category)
+        random_workout = self.random_workout
         print("\nYour WORKOUT for today is {}.\n".format(chosen_category.upper()))
         print("Provide {} rounds of each exercise with {} minutes break between rounds.".format(num_rounds, break_time))
         print("For exercise where you have to use weight, take a weight that you can do 10 reps with per set.\n")
@@ -87,10 +93,61 @@ class Workout:
         print("\nCheck the links below if needed to perform the correct technique for each exercise: \n")
         for index, exercise in enumerate(random_workout, start = 1):
             print(f"{index}. {exercise.link}")
-                
-                
-    '''Get wod from txt file'''
+            
+    def save_workout(self,chosen_category, output_image_path='workout.png'):
+        '''save workout as image'''
+        if self.random_workout is None:
+            self.generate_random_workout(chosen_category)
+        random_workout = self.random_workout    
+        image_width, image_hight = 600,800
+        background_color = (64,64,64)
+        image = self.create_image(image_width, image_hight, background_color)
+        draw= ImageDraw.Draw(image)
+        font= ImageFont.load_default()
+        font_size = 15
+        text_position = (30,30)
+        text_color = (255,255,255)
+        
+        workout_info=  self.create_workout_info(chosen_category, random_workout)
+        lines = workout_info.strip().split('\n')
+        self.draw_text_lines(draw, lines, text_position, font, font_size, text_color)
+        self.save_image(image, output_image_path)
+      
+    def create_image(self, width, hight, background_color):
+        '''create an image'''
+        return Image.new('RGB', (width, hight), background_color)
+     
+    def create_workout_info(self, chosen_category, random_workout):
+        '''create workout information'''  
+        workout_info = f"Your WORKOUT for today is {chosen_category.upper()}.\n\n"
+        workout_info += "Provide 3 rounds of each exercise with 2 minutes break between rounds.\n"
+        workout_info += "For exercise where you have to use weight, take a weight that you can do 10 reps with per set.\n\n"
+        for index, exercise in enumerate(random_workout, start = 1):
+            workout_info += f"{index}. {exercise.name}\n"  
+        workout_info += "\nDescriprion for each exercise: \n\n"
+            #wrap long lones of descriptions to fit within the image boundaries
+        max_line_length = 90
+        for index, exercise in enumerate(random_workout, start = 1):
+            wrapped_lines = textwrap.wrap(exercise.description, width=max_line_length)
+            formated_description = "\n".join(wrapped_lines)
+            workout_info += f"{index}. {formated_description}\n"
+        workout_info += "\nCheck the links below if needed to perform the correct technique for each exercise: \n\n"
+        for index, exercise in enumerate(random_workout, start = 1):
+            workout_info += f"{index}. {exercise.link}\n"
+        return workout_info
+       
+    def draw_text_lines(self, draw, lines, text_position, font, font_size, text_color):
+        '''draw text lines''' 
+        for line in lines:
+            draw.text(text_position, line, font=font, fill=text_color)
+            text_position = (text_position[0], text_position[1] + font_size)
+         
+    def save_image(self, image, output_image_path):
+        '''save image'''   
+        image.save(output_image_path)     
+        
     def get_wod(self, chosen_category):
+        '''Get wod from txt file'''
         if chosen_category.lower() not in self.categories:
             raise ValueError("Category {} is not found".format(chosen_category))
         with open("wods.txt", "r") as f:
@@ -119,51 +176,8 @@ class Workout:
             text_position = (text_position[0], text_position[1] + font_size)
         image.save(output_image_path, dpi=dpi)  
                 
-    '''save workout as image'''
-    def save_workout(self,chosen_category, output_image_path='workout.png'):
-        random_workout = self.generate_random_workout(chosen_category)
-        image_width, image_hight = 600,800
-        background_color = (64,64,64)
-        image = self.create_image(image_width, image_hight, background_color)
-        draw= ImageDraw.Draw(image)
-        font= ImageFont.load_default()
-        font_size = 15
-        text_position = (30,30)
-        text_color = (255,255,255)
-        
-        workout_info=  self.create_workout_info(chosen_category, random_workout)
-        lines = workout_info.strip().split('\n')
-        self.draw_text_lines(draw, lines, text_position, font, font_size, text_color)
-        self.save_image(image, output_image_path)
-    '''create an image'''  
-    def create_image(self, width, hight, background_color):
-        return Image.new('RGB', (width, hight), background_color)
-    '''create workout information'''   
-    def create_workout_info(self, chosen_category, random_workout):
-        workout_info = f"Your WORKOUT for today is {chosen_category.upper()}.\n\n"
-        workout_info += "Provide 3 rounds of each exercise with 2 minutes break between rounds.\n"
-        workout_info += "For exercise where you have to use weight, take a weight that you can do 10 reps with per set.\n\n"
-        for index, exercise in enumerate(random_workout, start = 1):
-            workout_info += f"{index}. {exercise.name}\n"  
-        workout_info += "\nDescriprion for each exercise: \n\n"
-            #wrap long lones of descriptions to fit within the image boundaries
-        max_line_length = 90
-        for index, exercise in enumerate(random_workout, start = 1):
-            wrapped_lines = textwrap.wrap(exercise.description, width=max_line_length)
-            formated_description = "\n".join(wrapped_lines)
-            workout_info += f"{index}. {formated_description}\n"
-        workout_info += "\nCheck the links below if needed to perform the correct technique for each exercise: \n\n"
-        for index, exercise in enumerate(random_workout, start = 1):
-            workout_info += f"{index}. {exercise.link}\n"
-        return workout_info
-    '''draw text lines'''    
-    def draw_text_lines(self, draw, lines, text_position, font, font_size, text_color):
-        for line in lines:
-            draw.text(text_position, line, font=font, fill=text_color)
-            text_position = (text_position[0], text_position[1] + font_size)
-    '''save image'''        
-    def save_image(self, image, output_image_path):
-        image.save(output_image_path)        
+    
+       
         
     
     
