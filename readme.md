@@ -4,7 +4,6 @@
 
 This program provides a simple way to create and display random workout routines. You can choose workout categories such as "upper body," "lower body," "full body," or "wod" (Workout of the Day) and generate customized workouts. You can also create your own workout categories and add exercises to them.
 
-
 ## Features
 
 - Generates random workout routines based on categories.
@@ -17,9 +16,11 @@ You can generate and display random workouts by choosing a category. The program
 
 ### To start the application:
 
+```bash
 - python3 -m pip install Pillow
 - python3 -m pip install requests
 - python3 workout_generator.py
+```
 
 ## To run tests:
 
