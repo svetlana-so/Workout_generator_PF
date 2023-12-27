@@ -14,3 +14,13 @@ This program provides a simple way to create and display random workout routines
 ### Generating and Displaying Workouts
 
 You can generate and display random workouts by choosing a category. The program will provide exercise names, descriptions, and video links.
+
+### To start the application:
+
+- python3 -m pip install Pillow
+- python3 -m pip install requests
+- python3 workout_generator.py
+
+## To run tests:
+
+- python3 -m unittest tests.py
